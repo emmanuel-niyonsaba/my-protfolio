@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Navbar/>
-      <h1>helll</h1>
+      
     </>
   )
 }
