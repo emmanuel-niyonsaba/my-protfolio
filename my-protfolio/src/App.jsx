@@ -1,5 +1,6 @@
 
 import './App.css'
+import HiSession from './pages/HiSession'
 import Navbar from './pages/Navbar'
 
 function App() {
@@ -8,7 +9,9 @@ function App() {
   return (
     <>
     <Navbar/>
-      
+    
+      <HiSession/>
+
     </>
   )
 }
