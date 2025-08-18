@@ -4,7 +4,7 @@ const Skill =()=>{
     return (
 
         <>
-        <div>
+        <div className=" h-60 bg-amber-600"> 
             <h1>This skill section 
 
             </h1>

@@ -1,6 +1,3 @@
-
-
-
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
@@ -14,13 +11,13 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links */}
-        <div className="">
-          <Link  className="hover:text-blue-600 transition-colors cursor-pointer">Home</Link>
-          <Link className="hover:text-blue-600 transition-colors cursor-pointer">About Me</Link>
-          <Link className="hover:text-blue-600 transition-colors cursor-pointer">Skills</Link>
-          <Link className="hover:text-blue-600 transition-colors cursor-pointer">Projects</Link>
-          <Link className="hover:text-blue-600 transition-colors cursor-pointer">Resume</Link>
-          <Link className="hover:text-blue-600 transition-colors cursor-pointer">Contact</Link>
+        <div className="hidden md:flex gap-6 text-gray-300 font-medium">
+          <Link  to="/" className="hover:text-blue-600 transition-colors cursor-pointer">Home</Link>
+          <Link to="/about" className="hover:text-blue-600 transition-colors cursor-pointer">About Me</Link>
+          <Link to="/skills" className="hover:text-blue-600 transition-colors cursor-pointer">Skills</Link>
+          <Link  to ="/projects"className="hover:text-blue-600 transition-colors cursor-pointer">Projects</Link>
+          <Link  to="/resume"className="hover:text-blue-600 transition-colors cursor-pointer">Resume</Link>
+          <Link to="/footer"className="hover:text-blue-600 transition-colors cursor-pointer">Contact</Link>
           <Link>
             <button className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
               Chat With Me

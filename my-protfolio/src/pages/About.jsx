@@ -2,7 +2,7 @@
 const About =()=>{
     return(
         <>
-        <div>This about component</div>
+        <div className=" h-60 bg-amber-600">This about component</div>
         </>
     )
 }

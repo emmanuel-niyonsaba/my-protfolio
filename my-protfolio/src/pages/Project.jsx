@@ -4,7 +4,7 @@ function Project(){
     return (
 
         <>
-        <div>
+        <div className=" h-60 bg-amber-600">
             <h1>This a Projects component</h1>
         </div>
         </>
