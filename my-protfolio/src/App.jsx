@@ -1,45 +1,46 @@
-
-import './App.css'
-import HiSession from './pages/HiSession'
-import Navbar from './pages/Navbar'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Footer from './pages/Footer'
-import Skill from './pages/Skill'
-import Resume from './pages/Resume'
-import Project from './pages/Project'
-import Abaout from './pages/About'
-
-
+import './App.css';
+import HiSession from './pages/HiSession';
+import Navbar from './pages/Navbar';
+import About from './pages/About';
+import Skill from './pages/Skill';
+import Project from './pages/Project';
+import Resume from './pages/Resume';
+import Footer from './pages/Footer';
 
 function App() {
-
-
   return (
+    <div className="App">
+      {/* Navbar */}
+      <Navbar />
 
-    <>
-     <BrowserRouter>
-     <Routes>
-      <Route path='/' element={<Navbar />}></Route>
-      <Route path='/about' element={<Abaout />}></Route>
-      <Route path='/skills' element={<Skill />}></Route>
-      <Route path='/project' element={<Project />}></Route>
-      <Route path='/resume' element={<Resume />}></Route>
-      <Route path='/footer' element={<Footer />}></Route>
-     </Routes>   
-     
-      <HiSession />
-      <Abaout />
-      <Skill />
-      <Project />
-      <Resume />
-      <Footer />
-     </BrowserRouter>
+      {/* Sections */}
+      <main>
+        <section id="home">
+          <HiSession />
+        </section>
 
+        <section id="about">
+          <About />
+        </section>
 
+        <section id="skills">
+          <Skill />
+        </section>
 
+        <section id="projects">
+          <Project />
+        </section>
 
-    </>
-  )
+        <section id="resume">
+          <Resume />
+        </section>
+
+        <section id="footer">
+          <Footer />
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
